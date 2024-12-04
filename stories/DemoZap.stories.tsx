@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react';
-import React from 'react';
 
 import { _ButtonGreen } from './ButtonGreen/_ButtonGreen';
 import { _ButtonRed } from './ButtonRed/_ButtonRed';

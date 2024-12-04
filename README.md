@@ -5,7 +5,7 @@
 [![semantic-release][semantic-badge]][semantic-url]
 [![TypeScript][typescript-badge]][typescript-url]
 
-_Easily create demos of React components_
+_Create demo components in a zap_
 
 Maintaining example code and demo separately makes it painful, it's easy to get them out of sync 🙅
 
@@ -13,7 +13,7 @@ Code can't lie, documentation can 💥
 
 DemoZap CLI keeps your code up to date with demo 💪
 
-[![](misc/demo.gif)](https://mkosir.github.io/demozap/?path=/story/examples--button-green)
+[![](misc/demo.gif)](https://demozap.github.io/demozap/?path=/story/examples--button-green)
 
 ## Usage
 
@@ -22,14 +22,17 @@ DemoZap CLI keeps your code up to date with demo 💪
 
 **Use created demos 🎉**
 
-## [Demo 💥](https://mkosir.github.io/demozap)
+## [Demo 💥](https://demozap.github.io/demozap)
 
 ## Install
 
-React
-
 ```bash
+# React
 npm install -D react-demo-tab
+# Svelte
+npm install -D svelte-demo-tab
+# Vue
+npm install -D vue-demo-tab
 ```
 
 ## Generated Demos
@@ -47,7 +50,7 @@ npm install -D react-demo-tab
 
 ## Manually create demos
 
-To manually create demos instead via CLI use [DemoTab](https://github.com/mkosir/react-demo-tab) component.
+To manually create demos use [DemoTab](https://github.com/demozap/react-demo-tab) component.
 
 ## Contributing
 
@@ -55,8 +58,8 @@ All contributions are welcome!
 
 [npm-url]: https://www.npmjs.com/package/demozap
 [npm-badge]: https://img.shields.io/npm/v/demozap.svg
-[build-badge]: https://github.com/mkosir/demozap/actions/workflows/main.yml/badge.svg
-[build-url]: https://github.com/mkosir/demozap/actions/workflows/main.yml
+[build-badge]: https://github.com/demozap/demozap/actions/workflows/main.yml/badge.svg
+[build-url]: https://github.com/demozap/demozap/actions/workflows/main.yml
 [semantic-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-url]: https://github.com/semantic-release/semantic-release
 [typescript-badge]: https://badges.frapsoft.com/typescript/code/typescript.svg?v=101

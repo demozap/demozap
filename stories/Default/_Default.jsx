@@ -1,11 +1,8 @@
-import React from 'react';
 import { DemoTab } from 'react-demo-tab';
 
 import Demo from './Default.demozap';
 
-const code = `import React from 'react';
-
-const Default = () => <h3>DemoZap ⚡</h3>;
+const code = `const Default = () => <h3>DemoZap ⚡</h3>;
 
 export default Default;
 `;

@@ -9,6 +9,17 @@ const storybookConfig: StorybookConfig = {
     options: {},
   },
 
+  // JSX transform no longer requires importing React explicitly in every file.
+  swc: () => ({
+    jsc: {
+      transform: {
+        react: {
+          runtime: 'automatic',
+        },
+      },
+    },
+  }),
+
   webpackFinal: (config) => {
     config.module?.rules?.push({
       test: /\.scss$/,

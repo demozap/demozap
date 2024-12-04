@@ -1,11 +1,8 @@
-import React from 'react';
 import { DemoTab } from 'react-demo-tab';
 
 import Demo from './ButtonGreen.demozap';
 
-const code = `import React from 'react';
-
-import './ButtonGreen.demozap.css';
+const code = `import './ButtonGreen.demozap.css';
 
 const ButtonGreen = () => <button className="btn-green">Green Button</button>;
 
