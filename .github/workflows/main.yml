@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  NODE_VERSION: '22.x'
+  NODE_VERSION: '24.x'
   FILE_PATH_VERSION_INFO: ./src/common/utils/version-info.ts
   FOLDER_PATH_STORYBOOK_BUILD: ./build-storybook-static
 
