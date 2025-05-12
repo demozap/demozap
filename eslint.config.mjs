@@ -5,7 +5,7 @@ import * as eslintPluginImportX from 'eslint-plugin-import-x';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import eslintPluginReact from 'eslint-plugin-react';
 import eslintPluginVitest from '@vitest/eslint-plugin';
-import tseslint from 'typescript-eslint';
+import * as tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   eslint.configs.recommended,
