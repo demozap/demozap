@@ -15,7 +15,6 @@ export default tseslint.config(
   eslintPluginReact.configs.flat.recommended,
   eslintPluginVitest.configs.recommended,
   eslintPluginPrettierRecommended,
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   eslintConfigPrettier,
   {
     ignores: ['!.*', 'node_modules', 'bin', 'dist', 'compiled', 'build'],
