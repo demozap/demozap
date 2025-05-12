@@ -72,7 +72,7 @@ export default tseslint.config(
       ],
 
       'import-x/no-default-export': 'error',
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
