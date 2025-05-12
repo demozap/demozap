@@ -4,7 +4,7 @@ import { getDemoZapFilePaths } from './pipeline/01-getDemoZapFilePaths';
 import { createDemoZapFilesMeta } from './pipeline/02-createDemoZapFilesMeta';
 import { createDemoZapTemplates } from './pipeline/03-createDemoZapTemplates';
 import { replaceDemoZapTemplatesContent } from './pipeline/04-replaceDemoZapTemplatesContent/replaceDemoZapTemplatesContent';
-import { SupportedFramework } from './types';
+import type { SupportedFramework } from './types';
 
 type GenerateDemosParams = {
   flags: { framework?: SupportedFramework; prefix?: string };
@@ -24,7 +24,6 @@ export const generateDemos: GenerateDemos = async ({ flags: { framework = 'react
       break;
 
     default:
-      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
       throw Error(`Framework ${framework} not supported`);
   }
 
@@ -41,7 +40,6 @@ export const generateDemos: GenerateDemos = async ({ flags: { framework = 'react
     const numOfCreatedDemoTabTemplates = await createDemoZapTemplates(demoTabFilesInfo);
     log.info(`Created ${numOfCreatedDemoTabTemplates.toString()} DemoZap templates`);
   } catch (err) {
-    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
     log.error(`Error occurred: ${err}`);
     return;
   }
@@ -50,7 +48,6 @@ export const generateDemos: GenerateDemos = async ({ flags: { framework = 'react
     const numOfReplacedDemoTabTemplatesContent = await replaceDemoZapTemplatesContent(demoTabFilesInfo);
     log.info(`Content replaced in ${numOfReplacedDemoTabTemplatesContent.toString()} DemoZap templates`);
   } catch (err) {
-    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
     log.error(`Error occurred: ${err}`);
     return;
   }

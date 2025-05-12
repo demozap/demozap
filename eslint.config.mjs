@@ -1,10 +1,10 @@
 import eslint from '@eslint/js';
+import eslintPluginVitest from '@vitest/eslint-plugin';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import * as eslintPluginImportX from 'eslint-plugin-import-x';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import eslintPluginReact from 'eslint-plugin-react';
-import eslintPluginVitest from '@vitest/eslint-plugin';
 import * as tseslint from 'typescript-eslint';
 
 export default tseslint.config(
@@ -24,8 +24,7 @@ export default tseslint.config(
     languageOptions: {
       parserOptions: {
         projectService: true,
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-        tsconfigRootDir: import.meta.name,
+        tsconfigRootDir: import.meta.dirname,
       },
     },
     settings: {
@@ -43,6 +42,8 @@ export default tseslint.config(
       'prefer-template': 'error',
       'no-nested-ternary': 'error',
       'no-unneeded-ternary': 'error',
+      'spaced-comment': 'error',
+      'no-console': 'error',
 
       '@typescript-eslint/ban-ts-comment': ['error', { 'ts-expect-error': 'allow-with-description' }],
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
@@ -51,17 +52,13 @@ export default tseslint.config(
       '@typescript-eslint/no-unnecessary-condition': 'error',
       '@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
       '@typescript-eslint/restrict-plus-operands': 'off',
+      '@typescript-eslint/restrict-template-expressions': 'off',
+      '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/naming-convention': [
         'error',
         {
           selector: 'typeAlias',
           format: ['PascalCase'],
-        },
-        {
-          selector: 'variable',
-          types: ['boolean'],
-          format: ['PascalCase'],
-          prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
         },
         {
           // Generic type parameter must start with letter T, followed by any uppercase letter.

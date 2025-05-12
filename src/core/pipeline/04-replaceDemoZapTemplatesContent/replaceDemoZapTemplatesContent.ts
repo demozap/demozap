@@ -1,4 +1,4 @@
-import { DemoTabFileMeta } from 'core/types';
+import type { DemoTabFileMeta } from 'core/types';
 
 import { replaceDemoTabTemplateContent } from './01-replaceDemoTabTemplateContent/replaceDemoTabTemplateContent';
 

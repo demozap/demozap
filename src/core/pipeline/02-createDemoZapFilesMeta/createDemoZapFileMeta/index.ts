@@ -1,4 +1,4 @@
-import { DemoTabFileMeta } from 'core/types';
+import type { DemoTabFileMeta } from 'core/types';
 
 import { extractDemoZapFilePathInfo } from './extractDemoZapFilePathInfo';
 import { findAssociateDemoZapFilesByName } from './findAssociateDemoZapFilesByName';

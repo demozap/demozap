@@ -1,5 +1,6 @@
 import chalk from 'chalk';
 
+// eslint-disable-next-line no-console
 const consoleLog = console.log;
 
 const logInfo = (message: string) => consoleLog(chalk.blue(message));
