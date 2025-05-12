@@ -36,5 +36,5 @@ const storybookConfig: StorybookConfig = {
   addons: ['@storybook/addon-webpack5-compiler-swc', '@storybook/addon-styling'],
 };
 
-// eslint-disable-next-line import/no-default-export
+// eslint-disable-next-line import-x/no-default-export
 export default storybookConfig;
