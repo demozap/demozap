@@ -68,6 +68,7 @@ export const cliParse = (): CliParseResult => {
   // console.log(JSON.stringify(cliParams, null, 2));
 
   return {
+    // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
     shouldExitCli: cliParams.options.help || cliParams.options.version,
     prefix: cliParams.options.prefix,
     framework: cliParams.options.framework,
