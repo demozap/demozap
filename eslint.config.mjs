@@ -71,7 +71,7 @@ export default tseslint.config(
         },
       ],
 
-      'import/no-default-export': 'error',
+      'import-x/no-default-export': 'error',
       'import/order': [
         'error',
         {
@@ -97,7 +97,7 @@ export default tseslint.config(
   {
     files: ['stories/**/*'],
     rules: {
-      'import/no-default-export': 'off',
+      'import-x/no-default-export': 'off',
     },
   },
 );
